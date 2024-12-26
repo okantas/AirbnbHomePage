@@ -7,9 +7,11 @@ import Search from "../public/search_icon.svg";
 export default function Header() {
   return (
     <div className="flex">
+      {/*first part*/}
       <nav>
         <Image src={Logo} alt="Airbnb" />
       </nav>
+      {/*middle part*/}
       <nav className="flex">
         <p>Anywhere</p>
         <p>Any week</p>
@@ -27,6 +29,8 @@ export default function Header() {
           </button>
         </Form>
       </nav>
+      {/*second part*/}
+      <nav></nav>
     </div>
   );
 }
