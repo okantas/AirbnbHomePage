@@ -34,7 +34,7 @@ export default function Header() {
       </nav>
       {/*last part*/}
       <nav className="flex gap-5 items-center">
-        <p className="font-bold">Airbnb your home</p>
+        <p className="font-bold text-sm">Airbnb your home</p>
         <Image src={World} alt="connect" />
         <div className="flex border-solid border-slate-500 border-2 rounded-full gap-2 px-3 py-2">
           <Image src={Options} alt="options" />
