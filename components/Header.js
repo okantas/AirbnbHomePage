@@ -9,13 +9,13 @@ import Profile from "../public/profile_icon.svg";
 
 export default function Header() {
   return (
-    <div className="flex justify-around py-8 h-1/6 items-center border-b-2">
+    <div className="flex justify-around py-5 h-1/6 items-center border-b-2">
       {/*first part*/}
       <nav>
         <Image src={Logo} alt="Airbnb" />
       </nav>
       {/*middle part*/}
-      <nav className="flex gap-10  border-solid border-2 border-black rounded-full py-3 px-4 items-center">
+      <nav className="flex gap-10  border-solid border-2 rounded-full py-3 px-4 items-center shadow-xl">
         <p className="text-sm font-bold">Anywhere</p>|
         <p className="text-sm font-bold">Any week</p>|
         <Form action="/search" className="flex gap-3">
