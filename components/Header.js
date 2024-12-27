@@ -9,14 +9,15 @@ import Profile from "../public/profile_icon.svg";
 
 export default function Header() {
   return (
-    <div className="flex justify-around py-8">
+    <div className="flex justify-around py-8 h-1/6 items-center border-b-2">
       {/*first part*/}
       <nav>
         <Image src={Logo} alt="Airbnb" />
       </nav>
       {/*middle part*/}
       <nav className="flex gap-10  border-solid border-2 border-black rounded-full py-3 px-4 items-center">
-        <p className="text-sm">Anywhere</p>|<p className="text-sm">Any week</p>|
+        <p className="text-sm font-bold">Anywhere</p>|
+        <p className="text-sm font-bold">Any week</p>|
         <Form action="/search" className="flex gap-3">
           <input
             name="query"
@@ -32,10 +33,10 @@ export default function Header() {
         </Form>
       </nav>
       {/*last part*/}
-      <nav className="flex">
-        <p>Airbnb your home</p>
+      <nav className="flex gap-5 items-center">
+        <p className="font-bold">Airbnb your home</p>
         <Image src={World} alt="connect" />
-        <div className="flex">
+        <div className="flex border-solid border-slate-500 border-2 rounded-full gap-2 px-3 py-2">
           <Image src={Options} alt="options" />
           <Image src={Profile} alt="profile" />
         </div>
