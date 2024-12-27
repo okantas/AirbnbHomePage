@@ -9,24 +9,23 @@ import Profile from "../public/profile_icon.svg";
 
 export default function Header() {
   return (
-    <div className="flex justify-around">
+    <div className="flex justify-around py-8">
       {/*first part*/}
       <nav>
         <Image src={Logo} alt="Airbnb" />
       </nav>
       {/*middle part*/}
-      <nav className="flex">
-        <p>Anywhere</p>
-        <p>Any week</p>
-        <Form action="/search">
+      <nav className="flex gap-10  border-solid border-2 border-black rounded-full py-3 px-4 items-center">
+        <p className="text-sm">Anywhere</p>|<p className="text-sm">Any week</p>|
+        <Form action="/search" className="flex gap-3">
           <input
             name="query"
-            className="w-16 outline-none"
+            className="w-20 outline-none placeholder-sm placeholder:text-sm text-sm "
             placeholder="Add Guests"
           />
           <button
             type="submit"
-            className="border-solid border-2 border-black bg-pink-600 p-2 rounded-3xl"
+            className="border-solid border-2  bg-pink-600 p-2 rounded-3xl"
           >
             <Image src={Search} alt="search" />
           </button>
