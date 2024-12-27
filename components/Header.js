@@ -3,10 +3,13 @@ import Image from "next/image";
 import Form from "next/form";
 import Logo from "../public/airbnb_logo.svg";
 import Search from "../public/search_icon.svg";
+import World from "../public/world_icon.svg";
+import Options from "../public/threeline.svg";
+import Profile from "../public/profile_icon.svg";
 
 export default function Header() {
   return (
-    <div className="flex">
+    <div className="flex justify-around">
       {/*first part*/}
       <nav>
         <Image src={Logo} alt="Airbnb" />
@@ -29,8 +32,15 @@ export default function Header() {
           </button>
         </Form>
       </nav>
-      {/*second part*/}
-      <nav></nav>
+      {/*last part*/}
+      <nav className="flex">
+        <p>Airbnb your home</p>
+        <Image src={World} alt="connect" />
+        <div className="flex">
+          <Image src={Options} alt="options" />
+          <Image src={Profile} alt="profile" />
+        </div>
+      </nav>
     </div>
   );
 }
