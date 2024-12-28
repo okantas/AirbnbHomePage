@@ -8,6 +8,10 @@ import Airbnb5 from "../public/airbnb5.svg";
 import Airbnb6 from "../public/airbnb6.svg";
 import Airbnb7 from "../public/airbnb7.svg";
 import Airbnb8 from "../public/airbnb8.svg";
+import Airbnb9 from "../public/airbnb9.svg";
+import Airbnb10 from "../public/airbnb10.svg";
+import Airbnb11 from "../public/airbnb11.svg";
+import Airbnb12 from "../public/airbnb12.svg";
 
 export default function Content() {
   const cardsList = [
@@ -74,6 +78,38 @@ export default function Content() {
       place: "Beach and lake views",
       date: "Mar 19 – 24",
       price: "$170",
+    },
+    {
+      id: 9,
+      photo: Airbnb9,
+      location: "Knoxville, Tennessee",
+      place: "Mountain and lake views",
+      date: "Apr 16 - 21",
+      price: "$388",
+    },
+    {
+      id: 10,
+      photo: Airbnb10,
+      location: "Sevierville, Tennessee",
+      place: "Mountain views",
+      date: "Jun 5 – 10",
+      price: "$343",
+    },
+    {
+      id: 11,
+      photo: Airbnb11,
+      location: "Branson, Missouri",
+      place: "Mountain views",
+      date: "Apr 30 – May 5",
+      price: "380",
+    },
+    {
+      id: 12,
+      photo: Airbnb12,
+      location: "Chicago, Illinois",
+      place: "City views",
+      date: "Apr 4 – 9",
+      price: "$326",
     },
   ];
 
