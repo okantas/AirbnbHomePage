@@ -10,6 +10,72 @@ import Airbnb7 from "../public/airbnb7.svg";
 import Airbnb8 from "../public/airbnb8.svg";
 
 export default function Content() {
+  const cards = [
+    {
+      id: 1,
+      photo: Airbnb1,
+      location: "Knoxville, Tennessee",
+      place: "Mountain and lake views",
+      date: "Apr 16 - 21",
+      price: "$388",
+    },
+    {
+      id: 2,
+      photo: Airbnb2,
+      location: "Sevierville, Tennessee",
+      place: "Mountain views",
+      date: "Jun 5 – 10",
+      price: "$343",
+    },
+    {
+      id: 3,
+      photo: Airbnb3,
+      location: "Branson, Missouri",
+      place: "Mountain views",
+      date: "Apr 30 – May 5",
+      price: "380",
+    },
+    {
+      id: 4,
+      photo: Airbnb4,
+      location: "Chicago, Illinois",
+      place: "City views",
+      date: "Apr 4 – 9",
+      price: "$326",
+    },
+    {
+      id: 1,
+      photo: Airbnb1,
+      location: "Knoxville, Tennessee",
+      place: "Mountain and lake views",
+      date: "Apr 16 - 21",
+      price: "$388",
+    },
+    {
+      id: 2,
+      photo: Airbnb2,
+      location: "Sevierville, Tennessee",
+      place: "Mountain views",
+      date: "Jun 5 – 10",
+      price: "$343",
+    },
+    {
+      id: 3,
+      photo: Airbnb3,
+      location: "Branson, Missouri",
+      place: "Mountain views",
+      date: "Apr 30 – May 5",
+      price: "380",
+    },
+    {
+      id: 4,
+      photo: Airbnb4,
+      location: "Chicago, Illinois",
+      place: "City views",
+      date: "Apr 4 – 9",
+      price: "$326",
+    },
+  ];
   return (
     <main className="mx-20 grid grid-cols-4 justify-center place-items-center max-w-full gap-6">
       <div className="flex flex-col gap-1 cursor-pointer ">
