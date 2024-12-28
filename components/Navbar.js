@@ -14,92 +14,33 @@ import BeachFront from "../public/beachfront.svg";
 import Trending from "../public/trending.svg";
 
 export default function navbar() {
+  const navItems = [
+    { id: 1, photo: Views, title: "Amazing Views" },
+    { id: 2, photo: Lakefront, title: "Lakefront" },
+    { id: 3, photo: Cave, title: "Caves" },
+    { id: 4, photo: OMG, title: "OMG!" },
+    { id: 5, photo: Earthhomes, title: "Earth homes" },
+    { id: 6, photo: Treehouses, title: "Treehouses" },
+    { id: 7, photo: Mansions, title: "Mansions" },
+    { id: 8, photo: Cabins, title: "Cabins" },
+    { id: 9, photo: AmazingPools, title: "Amazing Pools" },
+    { id: 10, photo: Islands, title: "Islands" },
+    { id: 11, photo: BeachFront, title: "Beachfront" },
+    { id: 12, photo: Trending, title: "Trending" },
+  ];
   return (
     <nav className="flex gap-8 items-center justify-center py-9">
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Views} alt="amazing views" />
-        <p className="text-xs my-2">Amazing Views</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Lakefront} alt="Lakefront" />
-        <p className="text-xs my-2">Lakefront</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Cave} alt="Cave" />
-        <p className="text-xs my-2">Caves</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={OMG} alt="OMG" />
-        <p className="text-xs my-2">OMG!</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Earthhomes} alt="Earth homes" />
-        <p className="text-xs my-2">Earth Homes</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Treehouses} alt="amazing views" />
-        <p className="text-xs my-2">Treehouses</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Mansions} alt="Mansions" />
-        <p className="text-xs my-2">Mansions</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Cabins} alt="cabins" />
-        <p className="text-xs my-2">Cabins</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={AmazingPools} alt="amazing pools" />
-        <p className="text-xs my-2">Amazing Pools</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Islands} alt="ısland" />
-        <p className="text-xs my-2">Islands</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={BeachFront} alt="beachfront" />
-        <p className="text-xs my-2">Beacfront</p>
-      </a>
-      <a
-        href="#"
-        className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
-      >
-        <Image src={Trending} alt="trending" />
-        <p className="text-xs my-2">Trending</p>
-      </a>
+      {navItems.map((items, index) => (
+        <div key={index}>
+          <a
+            href="#"
+            className="flex flex-col  justify-center items-center text-slate-500 px-1 py-3 gap-1 font-bold hover:border-solid hover:border-b hover:border-black hover:text-black transition-all duration-150 delay-100 ease-in-out"
+          >
+            <Image src={items.photo} alt="amazing views" />
+            <p className="text-xs my-2">{items.title}</p>
+          </a>
+        </div>
+      ))}
     </nav>
   );
 }
