@@ -10,7 +10,7 @@ import Airbnb7 from "../public/airbnb7.svg";
 import Airbnb8 from "../public/airbnb8.svg";
 
 export default function Content() {
-  const cards = [
+  const cardsList = [
     {
       id: 1,
       photo: Airbnb1,
@@ -44,112 +44,52 @@ export default function Content() {
       price: "$326",
     },
     {
-      id: 1,
-      photo: Airbnb1,
-      location: "Knoxville, Tennessee",
+      id: 5,
+      photo: Airbnb5,
+      location: "Chicago, Illinois",
+      place: "Lake and city views",
+      date: "Mar 5 – 10",
+      price: "$349",
+    },
+    {
+      id: 6,
+      photo: Airbnb6,
+      location: "Sevierville, Tennessee",
       place: "Mountain and lake views",
       date: "Apr 16 - 21",
-      price: "$388",
+      price: "$255",
     },
     {
-      id: 2,
-      photo: Airbnb2,
-      location: "Sevierville, Tennessee",
-      place: "Mountain views",
-      date: "Jun 5 – 10",
-      price: "$343",
+      id: 7,
+      photo: Airbnb7,
+      location: "Cassopolis, Michigan",
+      place: "Lake views",
+      date: "Mar 5 – 10",
+      price: "$595",
     },
     {
-      id: 3,
-      photo: Airbnb3,
-      location: "Branson, Missouri",
-      place: "Mountain views",
-      date: "Apr 30 – May 5",
-      price: "380",
-    },
-    {
-      id: 4,
-      photo: Airbnb4,
-      location: "Chicago, Illinois",
-      place: "City views",
-      date: "Apr 4 – 9",
-      price: "$326",
+      id: 8,
+      photo: Airbnb8,
+      location: "Tofte, Minnesota",
+      place: "Beach and lake views",
+      date: "Mar 19 – 24",
+      price: "$170",
     },
   ];
+
   return (
     <main className="mx-20 grid grid-cols-4 justify-center place-items-center max-w-full gap-6">
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb1} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Knoxville, Tennessee</h1>
-        <p className=" text-slate-500 text-sm">Mountain and lake views</p>
-        <p className="text-slate-500 text-sm">Apr 16 - 21</p>
-        <p className="text-sm">
-          <span className="font-bold">$388</span> night
-        </p>
-      </div>
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb2} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Sevierville, Tennessee</h1>
-        <p className=" text-slate-500 text-sm">Mountain views</p>
-        <p className="text-slate-500 text-sm">Jun 5 – 10</p>
-        <p className="text-sm">
-          <span className="font-bold">$343</span> night
-        </p>
-      </div>
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb3} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Branson, Missouri</h1>
-        <p className=" text-slate-500 text-sm">Mountain views</p>
-        <p className="text-slate-500 text-sm">Apr 30 – May 5</p>
-        <p className="text-sm">
-          <span className="font-bold">$380</span> night
-        </p>
-      </div>
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb4} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Chicago, Illinois</h1>
-        <p className=" text-slate-500 text-sm">City views</p>
-        <p className="text-slate-500 text-sm">Apr 4 – 9</p>
-        <p className="text-sm">
-          <span className="font-bold">$326</span> night
-        </p>
-      </div>
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb5} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Chicago, Illinois</h1>
-        <p className=" text-slate-500 text-sm">Lake and city views</p>
-        <p className="text-slate-500 text-sm">Mar 5 – 10</p>
-        <p className="text-sm">
-          <span className="font-bold">$349</span> night
-        </p>
-      </div>
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb6} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Sevierville, Tennessee</h1>
-        <p className=" text-slate-500 text-sm">Mountain and lake views</p>
-        <p className="text-slate-500 text-sm">Apr 16 - 21</p>
-        <p className="text-sm">
-          <span className="font-bold">$255</span> night
-        </p>
-      </div>
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb7} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Cassopolis, Michigan</h1>
-        <p className=" text-slate-500 text-sm">Lake views</p>
-        <p className="text-slate-500 text-sm">Mar 5 – 10</p>
-        <p className="text-sm">
-          <span className="font-bold">$595</span> night
-        </p>
-      </div>
-      <div className="flex flex-col gap-1 cursor-pointer ">
-        <Image src={Airbnb8} alt="First image" className="mb-3" />
-        <h1 className="font-bold text-sm">Tofte, Minnesota</h1>
-        <p className=" text-slate-500 text-sm">Beach and lake views</p>
-        <p className="text-slate-500 text-sm">Mar 19 – 24</p>
-        <p className="text-sm">
-          <span className="font-bold">$170</span> night
-        </p>
-      </div>
+      {cardsList.map((items, index) => (
+        <div key={index}>
+          <Image src={items.photo} alt="house image" className="mb-3" />
+          <h1 className="font-bold text-sm">{items.location}</h1>
+          <p className=" text-slate-500 text-sm">{items.place}</p>
+          <p className="text-slate-500 text-sm">{items.date}</p>
+          <p className="text-sm">
+            <span className="font-bold">{items.price}</span> night
+          </p>
+        </div>
+      ))}
     </main>
   );
 }
