@@ -12,6 +12,7 @@ import AmazingPools from "../public/amazingpools.svg";
 import Islands from "../public/island.svg";
 import BeachFront from "../public/beachfront.svg";
 import Trending from "../public/trending.svg";
+import Arrow from "../public/arrow.svg";
 
 export default function navbar() {
   const navItems = [
@@ -41,6 +42,11 @@ export default function navbar() {
           </a>
         </div>
       ))}
+      <Image
+        src={Arrow}
+        alt="arrow"
+        className="border-solid border-slate-500 border-2 rounded-3xl p-2 w-8 h-8 "
+      />
     </nav>
   );
 }
