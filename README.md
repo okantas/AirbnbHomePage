@@ -1,6 +1,6 @@
 I built this project by using Next.js and Tailwind 🧑‍💻
 
-This project is basically home page of Airbnb 🏠
+This project is basically simple home page version of Airbnb 🏠
 
 I hope you will enjoy it 🎉
 
