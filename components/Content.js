@@ -89,7 +89,7 @@ export default function Content() {
     },
     {
       id: 10,
-      photo: Airbnb10,
+      photo: Airbnb3,
       location: "Sevierville, Tennessee",
       place: "Mountain views",
       date: "Jun 5 – 10",
@@ -114,7 +114,7 @@ export default function Content() {
   ];
 
   return (
-    <main className="mx-20 grid grid-cols-4 justify-center place-items-center max-w-full gap-6">
+    <main className="mx-20  grid grid-cols-4 justify-center place-items-center max-w-full gap-6">
       {cardsList.map((items, index) => (
         <div key={index} className="cursor-pointer">
           <Image src={items.photo} alt="house image" className="mb-3" />
