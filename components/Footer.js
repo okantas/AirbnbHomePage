@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="flex place-items-center gap-4">
         <p className="flex place-items-center">
           <Image src={World} alt="world" />
-          English (US)
+          English-(US)
         </p>
         <p>$ USD</p>
         <p>Support & resources</p>
