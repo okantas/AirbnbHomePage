@@ -116,7 +116,7 @@ export default function Content() {
   return (
     <main className="mx-20 grid grid-cols-4 justify-center place-items-center max-w-full gap-6">
       {cardsList.map((items, index) => (
-        <div key={index}>
+        <div key={index} className="cursor-pointer">
           <Image src={items.photo} alt="house image" className="mb-3" />
           <h1 className="font-bold text-sm">{items.location}</h1>
           <p className=" text-slate-500 text-sm">{items.place}</p>
