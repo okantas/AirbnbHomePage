@@ -6,7 +6,7 @@ I hope you will enjoy it 🎉
 
 ## Getting Started
 
-First, run the development server:
+if you want to run the development at server:
 
 ```bash
 npm run dev
