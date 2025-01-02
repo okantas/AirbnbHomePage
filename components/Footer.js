@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="flex  text-sm place-items-center justify-around py-4 border-t-2 mt-5 ">
       <div className="flex gap-4">
-        <p>© 2023 Airbnb, Inc.</p>
+        <p>© 2025 Airbnb, Inc.</p>
         <ul className="flex gap-4 ">
           <li>Terms</li>
           <li>Sitemap</li>
